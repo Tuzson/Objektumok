@@ -4,9 +4,6 @@ public class AnimalClass {
     int hungry;
     int thirsty;
 
-//    public AnimalClass(){
-//
-//    }
 
     public AnimalClass(){
         this.hungry= 50;
