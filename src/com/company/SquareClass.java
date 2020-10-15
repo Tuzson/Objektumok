@@ -35,5 +35,21 @@ public class SquareClass {
         }
         return false;
     }
+
+    public CircleClass insideCircle() {
+        PointClass circleCenter = new PointClass((this.leftDown.posX + this.sideLength/2),(this.leftDown.posY + this.sideLength / 2));
+        diagonal = Math.sqrt(2 * sideLength);
+        double radius = this.sideLength / 2;
+        CircleClass circle = new CircleClass(radius,circleCenter);
+
+        return circle;
+    }
+    public CircleClass outSideCircle(){
+        PointClass circleCenter =new PointClass((this.leftDown.posX + this.sideLength/2),(this.leftDown.posY + this.sideLength / 2));
+        diagonal = Math.sqrt(2 * sideLength);
+        double radius = diagonal / 2;
+        CircleClass circle = new CircleClass(radius,circleCenter);
+        return circle;
+    }
 }
 
