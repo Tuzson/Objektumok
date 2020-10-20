@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class TestMain {
     public static void main(String[] args) {
-//        int[] gear ={45,30,25,20,15,10};
         BicycleClass peugeot = new BicycleClass(0.66);
         int inGear;
         double revPerSec;
